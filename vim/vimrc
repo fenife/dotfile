@@ -119,9 +119,6 @@ let NERDTreeAutoDeleteBuffer=1	" 删除文件时自动删除文件对应 buffer
 " 使用 ctrlsf.vim 插件在工程内全局查找光标所在关键字，设置快捷键。快捷键速记法：search in project
 nnoremap <Leader>sp :CtrlSF<CR>
 
-" <leader>cc，注释当前选中文本
-" <leader>cu，取消选中文本块的注释
-
 """ YouCompleteMe """
 " YCM 补全菜单配色
 " highlight Pmenu ctermfg=2 ctermbg=3 guifg=#005f87 guibg=#EEE8D5 	" 菜单
@@ -154,8 +151,17 @@ map <leader>ss :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>
 " 恢复快捷键
 map <leader>rs :source my.vim<cr> :rviminfo my.viminfo<cr>
 
+" 关闭行号，方便鼠标复制
+map <F2> :set nonu<cr>
 
-
+" 内置快捷键
+" Press Ctrl-O to jump back to the previous (older) location.
+" Press Ctrl-I (same as Tab) to jump forward to the next (newer) location.
+" :jumps  " Display the jump list for the current window
+"
+" 插件快捷键
+" <leader>cc，注释当前选中文本
+" <leader>cu，取消选中文本块的注释
 
 
 

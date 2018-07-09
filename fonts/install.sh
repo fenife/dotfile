@@ -2,7 +2,7 @@
 # Userland mode (~$USER/), (~/).
 
 # ~/.fonts is now deprecated and that
-#FONT_HOME=~/.fonts
+# FONT_HOME=~/.fonts
 # ~/.local/share/fonts should be used instead
 FONT_HOME=~/.local/share/fonts
 
