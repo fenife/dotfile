@@ -1,0 +1,35 @@
+#file: .gitconfig
+
+[user]
+	name = ""
+	email = ""
+[gui]
+[alias]
+	#g  = git
+	d  = !"git diff"
+	#di = !"d() { git diff --patch-width-stat head~$1; }; git diff-index --quiet HEAD"
+	cm = commit -a -v
+	ci = commit
+	co = checkout
+	br = branch
+	st = status
+	cl = clone
+	last = log -1
+	sm = submodule
+	unst = reset HEAD
+	re = reset --hard
+	throw  = reset --hard HEAD
+	throwb  = reset --hard HEAD^
+	#clr = clean -fdx -f
+
+	#lg = log --color --graph --date=format:%c --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen(%cd) %C(bold blue)<%an> %Creset %s %Creset' --abbrev-commit
+	#lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an> %Creset' --abbrev-commit
+
+	lg = log --color --graph --date=iso --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen(%cd) %Creset %C(bold blue)<%an> %Creset %s %Creset' --abbrev-commit
+
+	# f: files, show changed files
+	lgf = log --color --graph --date=iso --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen(%cd) %Creset %C(bold blue)<%an> %Creset %s %Creset' --abbrev-commit -2 --name-status
+
+	# n: number
+	lgn = log --color --graph --date=iso --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen(%cd) %Creset %C(bold blue)<%an> %Creset %s %Creset' --abbrev-commit -20
+
